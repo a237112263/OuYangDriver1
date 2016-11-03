@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    >
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linear_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:alpha="0.5"
+        android:layout_marginBottom="120dp"
+        style="@style/text_flag_01"
+        android:id="@+id/bt_allselect"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="30dp"
+        android:text="全选"
+        android:textColor="#fff"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:alpha="0.5"
+       android:layout_marginBottom="40dp"
+        style="@style/text_flag_01"
+        android:id="@+id/bt_details"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="30dp"
+        android:text="点击卸货"
+        android:textColor="#fff"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="#f0f"
+        android:textSize="20dp"
+        android:text="货物已全部卸完！"
+        android:id="@+id/tv_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
+
+
+</LinearLayout>

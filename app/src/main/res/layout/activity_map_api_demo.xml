@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:id="@+id/rlly_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#02b6ff"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="当前位置："
+            android:textSize="15dp"
+            android:textColor="#f0f"
+            android:id="@+id/tv_baidumap"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="gone"
+                android:textSize="12dp"
+                android:id="@+id/btn_location1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="上传位置信息"
+                >
+            </Button>
+            <Button
+                android:textSize="12dp"
+                android:id="@+id/btn_location"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="上传位置信息"
+                >
+            </Button>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
